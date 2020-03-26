@@ -1,12 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
-
 #Overall, I have two functions. The first defines and creates a list of set and get functions that 
 ##allows me to set matricies and inverses and grab them as I need. The other function actually 
 ##calculates the inverse of the matricies but it first searches to see if this inverse was previously 
 ##calculated using the functions defined in the first function.
 
-## Write a short comment describing this function
 
 ##makeCacheMatrix() builds a set of set and get functions and returns these functions within a list 
 ##to the parent environment
@@ -29,8 +25,6 @@ makeCacheMatrix <- function(x = matrix()) { ##to make the matrix straight into t
        getinverse = getinverse) ##create a list of all the functions with names
 }
 
-
-## Write a short comment describing this function
 
 ##cacheSolve() calculates the inverse of the matrix created above; however, it first checks to see 
 ##if the inverse has already been calculated, if it has already been calculated, it gets the inverse 
